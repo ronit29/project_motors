@@ -11,22 +11,18 @@ $user_mail = "";
 
 function send_sms($POST_data = NULL)
 {
-	$apiKey = urlencode('FZ5EKlFprhk-nB5DQqkVQHMeUB9HRNP3MEVBiQLPAW	');
+	$apiKey = '197727AG6ZZhJh5e5a8042de';
 	$numbers = array(9896164444);
-	$sender = urlencode('TXTLCL');
-	$body = $POST_data;
-	$message = rawurlencode($body);
-	// $numbers = implode(',', $numbers);
-	$data = array('apikey' => $apiKey, 'numbers' => $numbers, "message" => $message);
- 
-	$ch = curl_init('https://api.textlocal.in/send/');
-	curl_setopt($ch, CURLOPT_POST, true);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	$response = curl_exec($ch);
-	curl_close($ch);
+	// $message = rawurlencode($POST_data);
+	$message = rawurlencode("HI Ronit \n Your booking has been confirmed.");
+	$numbers = implode(',', $numbers);
+    $ch = curl_init(); 
+    curl_setopt($ch, CURLOPT_URL, "http://my.msgwow.com/api/sendhttp.php?authkey=".$apiKey."&mobiles=919896164444&message=".$message."&sender=INMOTR&route=1&country=91"); 
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+    $output = curl_exec($ch); 
+    curl_close($ch);      
 
-	// echo $response;
+	echo $output;
 }
 
 
@@ -56,6 +52,6 @@ function send_mail_admin($post_data = NULL)
     return 'error';
 }  
 
-// send_sms();
+send_sms($admin_sms);
 
 ?>
