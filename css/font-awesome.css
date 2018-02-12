@@ -1255,6 +1255,9 @@ i{
 .fa-apple:before {
   content: "\f179";
 }
+.fa-percent:before {
+  content: "\f295";
+}
 .fa-windows:before {
   content: "\f17a";
 }

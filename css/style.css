@@ -97,7 +97,7 @@ p{
 
 .header{
 	text-align:center;
-	background:url(../img/pw_maze_black_2X.png) left top repeat;
+	background:url(../img/vintage_small.jpg)  no-repeat fixed center;
 	padding:280px 0;
 }
 .logo{
@@ -142,10 +142,16 @@ p{
 color: #fff;
 }
 
-
+.servicelink{
+	background: #ffb133;
+}
+.repairlink{
+  margin-right: 4%;
+  background: #fc7836 ;
+}
 .link{
 	padding:15px 35px;
-	background:#7cc576;
+	/*background:##ff9f00;*/
 	color:#fff !important;
 	font-size:16px;
 	font-weight:400;
@@ -161,16 +167,64 @@ color: #fff;
 }
 .link:hover {
 	text-decoration:none;
-	color:#7cc576 !important;
-	background:#fff;
+	/*color:#7cc576 !important;*/
+	/*background:#fff;*/
 }
 
 .link:active, .link:focus {
-	background: #7cc576;
+	/*background: #7cc576;*/
 	text-decoration:none;
 	color:#fff !important;
 }
+.intro_section
+{
+	/*background: rgba(255,255,255,0.75);*/
+	/*opacity: 0.4;*/
+	/*border-radius: 2px;*/
+}
 
+.radio_div input[type=radio] {
+		display:none;
+}
+.radio_div input[type=radio] + label{
+		display:inline-block;
+		margin:-3px;
+		padding: 8px 16px;
+		margin-bottom: 0;
+		/*font-size: 14px;*/
+		line-height: 20px;
+		color: #333;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		
+	}
+
+input[type=radio]:checked + label{
+		   background-image: none;
+		outline: 0;
+		-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+		-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+		box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+			background-color:#ffb133;
+	}
+.radio_div{
+	padding-top: 4px;
+}
+.radiolabel{
+	border-radius: 0 !important;
+	width: 50%;
+}
+.lastfields
+{
+	padding-top: 4%;
+}
+.book_button,.radio_div
+{
+	width: 100%;
+}
 /* Navigation
 ---------------------------------*/
 .main-nav-outer{
@@ -215,9 +269,13 @@ color: #fff;
 .main-section{
 	padding:90px 0 110px;
 }
+.sitelogo_container
+{
+	height: 72px;
+	widows: 67px;
+}
 
-
-/* Services
+/* s
 ---------------------------------*/
 
 .service-list{
@@ -772,7 +830,7 @@ border: 2px solid #fff;
 ---------------------------------*/
 
 .footer{
-	background:url(../img/pw_maze_black_2X.png) left top repeat;
+	background:url(../img/pw_maze_black.png) left top repeat;
 	padding:35px 0 35px;
 }
 .footer-logo{
@@ -824,7 +882,7 @@ border: 2px solid #fff;
 .field{
   position: relative;
   padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 12px;
 }
 .floatlabel {
   font-weight: 510;	
@@ -833,11 +891,12 @@ border: 2px solid #fff;
   transition: all 200ms ease-in;
   transform: translateY(-50%);
   pointer-events: none;position:absolute;left:0;top:50%;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .floatinput{
 	font-weight: 540;
 }
+
 
 .floatinput:focus + .floatlabel,
 .floatinput:not([data-attr='']) + .floatlabel
@@ -848,7 +907,14 @@ border: 2px solid #fff;
   transform: translate3d(0, -192%, 0);
   opacity: 0.8;
 }
-
+.booking_form_wrapper
+{
+	padding-left: 15%;
+}
+.service_top_container
+{
+	padding-top: 5%;
+}
 /* Animation Timers
 ---------------------------------*/
 .delay-02s { 
@@ -893,4 +959,10 @@ border: 2px solid #fff;
 .delay-12s { 
 	animation-delay: 1.2s; 
 	-webkit-animation-delay: 1.2s; 
+}
+.w3-select{
+	background: none;
+}
+.w3-input:focus, .w3-select:focus {
+	outline: none;
 }

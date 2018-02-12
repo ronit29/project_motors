@@ -38,28 +38,31 @@
 </head>
 <body ng-app="myApp">
 <header class="header" id="header"><!--header-start-->
-	<div class="container">
+   <div class="container">
+      <div class="intro_section">
     	<figure class="logo">
-        	<a href="#"><img src="img/logo.png" alt=""></a>	
+        	<a href="#"><!-- <img src="img/logo.png" alt=""> --></a>	
         </figure>	
-        <h1 class="animated fadeInDown delay-07s">Welcome To Indian Motors</h1>
-        <ul class="we-create animated fadeInUp delay-1s">
-        	<li>We are a digital agency that loves crafting beautiful websites.</li>
+        <h1 class="animated fadeInDown">Indian Motors</h1>
+        <ul class="we-create animated fadeInUp">
+        	<li><strong>DoorStep Bike Service and Repair in Gurgaon starting at 299*.</strong></li>
         </ul>
-            <a class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
-    </div>
+            <a class="link animated fadeInUp delay-02s repairlink" href="#service"><b>Book a Repair</b></a>
+            <a class="link animated fadeInUp delay-02s servicelink" href="#service"><b>Book Service</b></a>
+      </div>     
+   </div>
 </header><!--header-end-->
 
 <nav class="main-nav-outer" id="test"><!--main-nav-start-->
 	<div class="container">
         <ul class="main-nav">
-        	<li><a href="#header">Home</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
-            <li><a href="#client">Clients</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
+        	<li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li class="small-logo"><a href="#header"><img class="sitelogo_container" src="img/newLogo.png" alt=""></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#contact"></a></li>
         </ul>
         <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
     </div>
@@ -67,19 +70,19 @@
 
 
 
-<section class="main-section" id="service"><!--main-section-start-->
+<section class="main-section" id="service">
 	<div class="container" ng-controller="booking">
     	<h2>Services</h2>
-    	<h6>We offer exceptional service with complimentary hugs.</h6>
-        <div class="row">
+    	<h6>Indian Motors care for your Bike as our own.</h6>
+        <div class="row service_top_container">
         	<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
             	<div class="service-list">
                 	<div class="service-list-col1">
                     	<i class="fa-paw"></i>
                     </div>
                 	<div class="service-list-col2">
-                        <h3>branding &amp; identity</h3>
-                        <p>Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>
+                        <h3>Doorstep Service</h3>
+                        <p>Home Pickup and Drop service at just Rs 149*.</p>
                     </div>
                 </div>
                 <div class="service-list">
@@ -87,17 +90,17 @@
                     	<i class="fa-gear"></i>
                     </div>
                 	<div class="service-list-col2">
-                        <h3>web development</h3>
-                        <p>Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .</p>
+                        <h3>Original Spares</h3>
+                        <p>Indian Motors only uses Original Spare parts and quality Products.</p>
                     </div>
                 </div>
                 <div class="service-list">
                 	<div class="service-list-col1">
-                    	<i class="fa-apple"></i>
+                    	<i class="fa-percent"></i>
                     </div>
                 	<div class="service-list-col2">
-                        <h3>mobile design</h3>
-                        <p>Proin iaculis purus consequat digni sem digni ssim. Purus donec porttitora entum.</p>
+                        <h3>Discounts</h3>
+                        <p>30% Discount on Labor Charges For AMC Members.</p>
                     </div>
                 </div>
                 <div class="service-list">
@@ -105,31 +108,68 @@
                     	<i class="fa-medkit"></i>
                     </div>
                 	<div class="service-list-col2">
-                        <h3>24/7 Support</h3>
-                        <p>Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.</p>
+                        <h3>Post Service Support</h3>
+                        <p>Indian Motors is there for you if you face any issue from our service.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-8 col-sm-6  wow booking_form_wrapper">
             	<form class="w3-container" id="bookingForm">
+                      <div class="row">
+                       <div class="col-md-6 col-sm-6">
+                         <div class="field">    
+                           <input type="text" class="floatinput w3-input input_gen"  data-attr="{{input.name}}" ng-model='input.name'>
+                           <label class="floatlabel" for="Name">Name</label>
+                         </div>  
+                       </div>  
+                       <div class="col-md-6 col-sm-6">
+                          <div class="field">    
+                             <input type="text" class="floatinput w3-input input_gen"  data-attr="{{input.phone}}" ng-model='input.phone'>
+                             <label class="floatlabel" for="Phone">Phone</label>
+                          </div>  
+                        </div>    
+                      </div> 
                       <div class="field">    
-                         <input type="text" class="floatinput w3-input w3-border input_gen" ng-model='input.name'>
-                         <label class="floatlabel" for="Name">Name</label>
-                     </div>  
-                     <div class="field">    
-                         <input type="text" class="floatinput w3-input w3-border input_gen" ng-model='input.phone'>
-                         <label class="floatlabel" for="Phone">Phone</label>
-                     </div>  
-                     <div class="field">    
-                         <input type="text" class="floatinput w3-input w3-border input_gen" ng-model='input.email'>
+                         <input type="text" class="floatinput w3-input input_gen"  data-attr="{{input.email}}" ng-model='input.email'>
                          <label class="floatlabel" for="Email">Email</label>
-                     </div>  
-                     <div class="field">    
-                         <input type="text" class="floatinput w3-input w3-border input_gen" ng-model='input.model'>
-                         <label class="floatlabel" for="Model">Model</label>
-                     </div>  
-                     <div class="submit_button">
-                         <input type="submit" ng-disabled="((!input.name) || (!input.phone) || (!input.email))" ng-click="book_service(input)"  class="w3-button" value="Book" id="book_submit">
+                      </div>  
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="field">    
+                              <select  class="w3-select" name="input.brand">
+                                  <option value="" disabled selected>Choose Brand</option>
+                                  <option value="Bajaj">Bajaj</option>
+                                  <option value="Hero">Hero</option>
+                                  <option value="Honda">Honda</option>
+                                  <option value="KTM">KTM</option>
+                                  <option value="Enfield">Royal Enfield</option>
+                                  <option value="Suzuki">Suzuki</option>
+                                  <option value="TVS">TVS</option>
+                                  <option value="Yamaha">Yamaha</option>
+                               </select>
+                            </div>  
+                        </div>  
+                        <div class="col-md-6 col-sm-6">
+                          <div class="field">    
+                             <input type="text" class="floatinput w3-input input_gen"  data-attr="{{input.model}}" ng-model='input.model'>
+                             <label class="floatlabel" for="Model">Model</label>
+                          </div>  
+                        </div>    
+                     </div> 
+                     <div class="row lastfields">
+                        <div class="col-md-6 col-sm-6"> 
+                          <div class="radio_div">
+                              <input type="radio" id="radio1" name="type" value="all">
+                              <label for="radio1" class="btn btn-primary btn-lg radiolabel">Service</label>
+                              <input type="radio" id="radio2" name="type" value="false">
+                              <label for="radio2" class="btn btn-primary btn-lg radiolabel">Repair</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                         <div class="submit_button">
+                             <input type="submit" ng-disabled="((!input.name) || (!input.phone) || (!input.email))" ng-click="book_service(input)"  class="w3-button w3-green book_button" value="Confirm Booking" id="book_submit">
+                         </div>
+                        </div> 
                      </div>
                 </form>
             </div>
@@ -140,7 +180,7 @@
 
 
 
-<section class="main-section alabaster"><!--main-section alabaster-start-->
+<!-- <section class="main-section alabaster">
 	<div class="container">
     	<div class="row">
 			<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
@@ -180,7 +220,7 @@
             </div>
         </div>
 	</div>
-</section><!--main-section alabaster-end-->
+</section> --><!--main-section alabaster-end-->
 
 
 
