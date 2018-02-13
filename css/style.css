@@ -91,7 +91,9 @@ p{
 	line-height:24px;
 	margin:0;
 }
-
+.book_success{
+	margin-top: 16%;
+}
 /* Header Styles
 ---------------------------------*/
 
@@ -105,12 +107,12 @@ p{
 	margin:0 auto 35px;
 }
 .header h1{
-	font-family: 'Montserrat',sans-serif;
+	font-family: 'Patua One';
 	font-size:50px;
 	font-weight:400;
 	letter-spacing: -1px;
 	margin:0 0 22px 0 ;
-	color:#fff;
+	color:#0a0a0a;
 }
 
 .we-create{
@@ -124,7 +126,7 @@ p{
 	display:inline-block;
 	font-family: 'Montserrat',sans-serif;
 	font-size:14px;
-	color: #bcbcbc;
+	color: #2b7d7b;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin:0 5px 0 0;
@@ -177,10 +179,13 @@ color: #fff;
 	color:#fff !important;
 }
 .intro_section
-{
-	/*background: rgba(255,255,255,0.75);*/
-	/*opacity: 0.4;*/
-	/*border-radius: 2px;*/
+{  
+    border-radius: 13px;
+    width: 60%;
+    padding-top: 1%;
+    margin-left: 20%;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 41vh;
 }
 
 .radio_div input[type=radio] {
@@ -225,6 +230,7 @@ input[type=radio]:checked + label{
 {
 	width: 100%;
 }
+
 /* Navigation
 ---------------------------------*/
 .main-nav-outer{
