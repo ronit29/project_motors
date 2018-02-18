@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+
+<title>Indian motors | Bike Service Bike Repair Home Service Gurgaon</title>
+<meta name="description" content="Bike Garage,Bike Chainset, Bike Service Bike Repair and home service pickup and drop facility in gurgaon.">
+<meta name="keywords" content="Home Bike Service,Bike Repair Gurgaon,Bike Service Gurgaon,Pulsar Service Gurgaon,Apache Service Gurgaon,Yamaha Service, Honda Service Gurgaon, Activa Service Gurgaon, Bike Fix,Online Bike service,Bike Service pickup,Bike Checkup,Bike tyres,Bike Engine,Engine Oil,Online Service Gurgaon">
+<link rel="icon" href="newfav.png" type="image/png">
+<link rel="shortcut icon" href="newfav.ico" type="img/x-icon">
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+
+<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<!-- <script src="contactform/contactform.js"></script> -->
+
+
+
+</head>
+<body ng-app="myApp">
+<nav class="main-nav-outer" id="test"><!--main-nav-start-->
+    <div class="container">
+        <ul class="main-nav">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li class="small-logo"><a href="/"><img class="sitelogo_container" src="img/newLogo.png" alt=""></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+    </div>
+</nav><!--main-nav-end-->
+
+
+<section>
+    <div class="container">
+        <h1>About Us</h1>
+        <p class="about_us">
+            Established in 2002, Indian Motors has been serving its customers with Satisfaction and their bikes with performance.
+            At Indian Motors we believe customer happiness is at top most priority.<br>
+           .
+        </p>
+        <div class="about_startegy">
+            <h2>Our Strategy</h2>
+            <p> We are building the next generation of riders globally and fostering the incredible feeling of personal freedom you get from behind the handlebars.
+            Every Rider in Gurgaon must feel the passion for his bike and must enjoy a smooth and comfortable journey.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer footer_other">
+    <div class="container">
+        <!-- <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div> -->
+        <span class="copyright">&copy; Indian Motors. All Rights Reserved</span>
+    </div>
+</footer>
+
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        $('#test').scrollToFixed();
+        $('.res-nav_click').click(function(){
+            $('.main-nav').slideToggle();
+            return false    
+            
+        });
+        
+    });
+</script>
+
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+  </script>
+
+
+<script type="text/javascript">
+    $(window).load(function(){
+        
+        $('.main-nav li a, .servicelink, .repairlink').bind('click',function(event){
+            var $anchor = $(this);
+            
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 102
+            }, 1500,'easeInOutExpo');
+            /*
+            if you don't want to use the easing effects:
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1000);
+            */
+      if ($(window).width() < 768 ) { 
+        $('.main-nav').hide(); 
+      }
+            event.preventDefault();
+        });
+    })
+</script>
+
+<script type="text/javascript">
+w3.includeHTML();
+
+$(window).load(function(){
+  
+  
+  var $container = $('.portfolioContainer'),
+      $body = $('body'),
+      colW = 375,
+      columns = null;
+
+  
+  $container.isotope({
+    // disable window resizing
+    resizable: true,
+    masonry: {
+      columnWidth: colW
+    }
+  });
+  
+  $(window).smartresize(function(){
+    // check if columns has changed
+    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+    if ( currentColumns !== columns ) {
+      // set new column count
+      columns = currentColumns;
+      // apply width to container manually, then trigger relayout
+      $container.width( columns * colW )
+        .isotope('reLayout');
+    }
+    
+  }).smartresize(); // trigger resize to set container width
+  $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            
+            filter: selector,
+         });
+         return false;
+    });
+  
+});
+
+</script>
+
+</body>
+</html>

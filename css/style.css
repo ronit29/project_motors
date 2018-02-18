@@ -221,6 +221,8 @@ input[type=radio]:checked + label{
 .radiolabel{
 	border-radius: 0 !important;
 	width: 50%;
+	white-space : nowrap;
+	font-size: 1vw;
 }
 .lastfields
 {
@@ -229,6 +231,9 @@ input[type=radio]:checked + label{
 .book_button,.radio_div
 {
 	width: 100%;
+}
+.about_us{
+	padding-top: 15px;
 }
 
 /* Navigation
@@ -834,10 +839,16 @@ border: 2px solid #fff;
 
 /* Footer
 ---------------------------------*/
-
+.footer_other{
+	position: fixed;
+}
 .footer{
 	background:url(../img/pw_maze_black.png) left top repeat;
 	padding:35px 0 35px;
+	/*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 .footer-logo{
 	margin:15px auto 35px;
