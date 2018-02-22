@@ -196,7 +196,7 @@ color: #fff;
 		margin:-3px;
 		padding: 8px 16px;
 		margin-bottom: 0;
-		/*font-size: 14px;*/
+		font-size: 14px;
 		line-height: 20px;
 		color: #333;
 		text-align: center;
@@ -222,7 +222,7 @@ input[type=radio]:checked + label{
 	border-radius: 0 !important;
 	width: 50%;
 	white-space : nowrap;
-	font-size: 1vw;
+	/*font-size: 1vw;*/
 }
 .lastfields
 {
@@ -982,4 +982,28 @@ border: 2px solid #fff;
 }
 .w3-input:focus, .w3-select:focus {
 	outline: none;
+}
+@media only screen and (max-width: 991px){
+	.intro_section {
+		margin: 0 auto!important;
+    	width: 100%;
+	}
+	.intro_section a.link{
+		margin-left: 10px;
+		margin-right: 10px;
+		min-width: 175px;
+	}
+}
+@media only screen and (max-width: 600px){
+	header#header {
+		padding: 0px;
+		height: 50%;
+	}
+	.container {
+		padding: 0px;
+	}
+	.intro_section {
+		border-radius: 0px;
+		height: 51vh;
+	}
 }
