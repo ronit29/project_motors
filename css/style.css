@@ -983,6 +983,32 @@ border: 2px solid #fff;
 .w3-input:focus, .w3-select:focus {
 	outline: none;
 }
+/*.offers{
+	font-size: 25px;
+	padding-top: 4px 4px;
+	margin-bottom: 5%;
+}*/
+
+.night-hotel{
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box; 
+	padding: 8px; 
+	border: none; 
+	font: normal 25px/1 "Arial", Helvetica, 
+	sans-serif; color: rgba(255,255,255,1); 
+	text-align: center; 
+	-o-text-overflow: ellipsis; 
+	text-overflow: ellipsis; 
+	text-shadow: 0 0 4px rgb(255,255,255) , 0 0 4px rgb(255,255,255) , 0 0 6px rgb(255,255,255) , 0 0 8px rgb(255,17,119) , 0 0 8px rgb(255,17,119) , 0 0 9px rgb(255,17,119) , 0 0 10px rgb(255,17,119) , 0 0 11px rgb(255,17,119) ; 
+	-webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms; 
+	-moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms; -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms; 
+	transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+}
+
+.night-hotel:hover {
+  text-shadow: 0 0 5px rgb(255,255,255) , 0 0 10px rgb(255,255,255) , 0 0 15px rgb(255,255,255) , 0 0 20px rgb(255,17,119) , 0 0 35px rgb(255,17,119) , 0 0 40px rgb(255,17,119) , 0 0 50px rgb(255,17,119) , 0 0 75px rgb(255,17,119) ;
+}
 @media only screen and (max-width: 991px){
 	.intro_section {
 		margin: 0 auto!important;

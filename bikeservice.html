@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 
-<title>MotorCycle Service Bike Repair Home Service Gurgaon</title>
+<title>Bike Service Booking Gurgaon</title>
 <meta name="description" content="Bike Garage,Bike Chainset, Bike Service Bike Repair and home service pickup and drop facility in gurgaon.">
 <meta name="keywords" content="Home Motorcycle Service,MotorCycle Repair Gurgaon,Motorcycle Service Gurgaon,Pulsar Repair Gurugram,Apache Repair Gurugram,Yamaha Service, Honda Service Gurgaon, Activa Service Gurugaon, Bike Fix,Online Bike service,Bike Service pickup,Bike Checkup,Bike tyres,Bike Engine,Engine Oil,Online Service Gurgaon">
 <link rel="icon" href="newfav.png" type="image/png" title="MotorBike Service Gurgaon">
@@ -57,18 +57,68 @@
 
 <section>
     <div class="container">
-        <h1>About Us</h1>
-        <p class="about_us">
-            Established in 2002, Indian Motors has been serving its customers with Satisfaction and their bikes with performance.
-            At Indian Motors we believe customer happiness is at top most priority.<br>
-           .
-        </p>
-        <div class="about_startegy">
-            <h2>Our Strategy</h2>
-            <h3>Online Bike Service Booking</h3>
-            <p> We are building the next generation of riders globally and fostering the incredible feeling of personal freedom you get from behind the handlebars.
-            Every Rider in Gurgaon must feel the passion for his bike and must enjoy a smooth and comfortable journey.</p>
-        </div>
+        <h1>Bike Service/Repair Request</h1>
+        <form class="w3-container" id="bookingForm" name="bookingform">
+                      <div class="row">
+                       <div class="col-md-6 col-sm-6">
+                         <div class="field">    
+                           <input type="text" ng-readonly="read_only"  class="floatinput w3-input input_gen"  data-attr="{{input.name}}" ng-model='input.name'>
+                           <label class="floatlabel" for="Name">Name</label>
+                         </div>  
+                       </div>  
+                       <div class="col-md-6 col-sm-6">
+                          <div class="field">    
+                             <input type="text" ng-readonly="read_only"  class="floatinput w3-input input_gen"  data-attr="{{input.phone}}" ng-pattern="/^[0-9]{1,10}$/" ng-model='input.phone' name="phone">
+                             <label class="floatlabel" for="Phone">Phone</label>
+                          </div>  
+                         <span style="color:red;" ng-show="bookingform.phone.$error.pattern">Enter your 10 digit Mobile</span>
+                        </div>    
+                      </div> 
+                      <div class="field">    
+                         <input type="text" ng-readonly="read_only"  class="floatinput w3-input input_gen"  data-attr="{{input.email}}" ng-model='input.email'>
+                         <label class="floatlabel" for="Email">Email</label>
+                      </div>  
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="field">    
+                              <select  class="w3-select" ng-model="input.brand">
+                                  <option value="" disabled selected>Choose Brand</option>
+                                  <option value="Bajaj">Bajaj</option>
+                                  <option value="Hero">Hero</option>
+                                  <option value="Honda">Honda</option>
+                                  <option value="KTM">KTM</option>
+                                  <option value="Enfield">Royal Enfield</option>
+                                  <option value="Suzuki">Suzuki</option>
+                                  <option value="TVS">TVS</option>
+                                  <option value="Yamaha">Yamaha</option>
+                               </select>
+                            </div>  
+                            <label class="floatlabel"></label>
+                        </div>  
+                        <div class="col-md-6 col-sm-6">
+                          <div class="field">    
+                             <input type="text" ng-readonly="read_only"  class="floatinput w3-input input_gen"  data-attr="{{input.model}}" ng-model='input.model'>
+                             <label class="floatlabel" for="Model">Model</label>
+                          </div>  
+                        </div>    
+                     </div> 
+                     <div class="row lastfields">
+                        <div class="col-md-6 col-sm-12"> 
+                          <div class="radio_div">
+                              <input type="radio" id="radio1" name="type" ng-model = 'input.type' value="Service">
+                              <label for="radio1" class="btn btn-primary btn-lg radiolabel">Service</label>
+                              <input type="radio" id="radio2" name="type" ng-model = 'input.type'  value="Repair">
+                              <label for="radio2" class="btn btn-primary btn-lg radiolabel">Repair</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                         <div class="submit_button">
+                             <button ng-disabled="((!input.name) || (!input.phone) || (!input.email)) || bookingform.phone.$error.pattern" ng-click="book_service(input)"  class="w3-button w3-green book_button" id="book_submit">Confirm Booking <i ng-if="book_load" class="fa fa-spinner fa-spin book_load"></i></button>
+                         </div>
+                        </div> 
+                     </div>
+                </form>
+                <div class="alert alert-success book_success" ng-show="booksuccess"><p><strong>Thank You!</strong>.Your Service Request Has been Confirmed.Our Executive will follow You Shortly. Refer to your email for more details.</p></div>
     </div>
 </section>
 
