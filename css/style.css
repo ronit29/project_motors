@@ -983,32 +983,45 @@ border: 2px solid #fff;
 .w3-input:focus, .w3-select:focus {
 	outline: none;
 }
-/*.offers{
-	font-size: 25px;
-	padding-top: 4px 4px;
-	margin-bottom: 5%;
-}*/
 
-.night-hotel{
-	-webkit-box-sizing: content-box; 
-	-moz-box-sizing: content-box; 
-	box-sizing: content-box; 
-	padding: 8px; 
-	border: none; 
-	font: normal 25px/1 "Arial", Helvetica, 
-	sans-serif; color: rgba(255,255,255,1); 
-	text-align: center; 
-	-o-text-overflow: ellipsis; 
-	text-overflow: ellipsis; 
-	text-shadow: 0 0 4px rgb(255,255,255) , 0 0 4px rgb(255,255,255) , 0 0 6px rgb(255,255,255) , 0 0 8px rgb(255,17,119) , 0 0 8px rgb(255,17,119) , 0 0 9px rgb(255,17,119) , 0 0 10px rgb(255,17,119) , 0 0 11px rgb(255,17,119) ; 
-	-webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms; 
-	-moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms; -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms; 
-	transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+h1.cool-text {
+    font: 350 1.2em/1 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    position: absolute;
+    top: 20%;
+    /*width: 100%;*/
 }
 
-.night-hotel:hover {
-  text-shadow: 0 0 5px rgb(255,255,255) , 0 0 10px rgb(255,255,255) , 0 0 15px rgb(255,255,255) , 0 0 20px rgb(255,17,119) , 0 0 35px rgb(255,17,119) , 0 0 40px rgb(255,17,119) , 0 0 50px rgb(255,17,119) , 0 0 75px rgb(255,17,119) ;
+h1.cool-text span, span:after {
+    font-weight: 500;
+    color: #efedce;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    letter-spacing: .1em;
+    padding: .2em 0 .25em 0;
 }
+
+h1.cool-text span {
+    font-size: 4em;
+    z-index: 100;
+    text-shadow: .04em .04em 0 #9cb8b3;
+}
+
+h1.cool-text span:after {
+    content: attr(data-shadow-text);
+    color: rgba(0,0,0,.35);
+    text-shadow: none;
+    position: absolute;
+    left: .0875em;
+    top: .0875em;
+    z-index: -1;
+    -webkit-mask-image: url(https://f.cl.ly/items/1t1C0W3y040g1J172r3h/mask.png);
+}
+
 @media only screen and (max-width: 991px){
 	.intro_section {
 		margin: 0 auto!important;
