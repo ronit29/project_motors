@@ -99,7 +99,7 @@ p{
 
 .header{
 	text-align:center;
-	background:url(../img/vintage_small.jpg)  no-repeat fixed center;
+	background:url(../img/newhome2.jpg)  repeat fixed center;
 	padding:280px 0;
 }
 .logo{
@@ -182,9 +182,9 @@ color: #fff;
 {  
     border-radius: 13px;
     width: 60%;
-    padding-top: 1%;
+    /*padding-top: 1%;*/
     margin-left: 20%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.9);
     height: 41vh;
 }
 
