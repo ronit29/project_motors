@@ -1135,10 +1135,10 @@ h1.cool-text span:after {
 		padding-left: 5.5vh;
 	}
 	blockquote{
-		font-size: 2em "CallunaRegular";
+		font: 2em "CallunaRegular";
 	}
 	blockquote strong:last-child{
-		font-size: 2em "Museo 700";
+		font: 2em "Museo 700";
 	}
 	.intro_section {
 		margin: 0 auto!important;
@@ -1165,10 +1165,10 @@ h1.cool-text span:after {
 		padding-left: 5.5vh;
 	}
 	blockquote{
-		font-size: 2em "CallunaRegular";
+		font: 2em "CallunaRegular";
 	}
 	blockquote strong:last-child{
-		font-size: 2em "Museo 700";
+		font: 2em "Museo 700";
 	}
 	.container {
 		/*padding: 0px;*/
