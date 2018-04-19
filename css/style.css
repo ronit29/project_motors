@@ -1140,15 +1140,7 @@ h1.cool-text span:after {
 	blockquote strong:last-child{
 		font: 2em "Museo 700";
 	}
-	.intro_section {
-		margin: 0 auto!important;
-    	width: 100%;
-	}
-	.intro_section a.link{
-		margin-left: 10px;
-		margin-right: 10px;
-		min-width: 175px;
-	}
+
 	blockquote blockquote strong:last-child{
 		font: 2em;
 	}
@@ -1170,11 +1162,14 @@ h1.cool-text span:after {
 	blockquote strong:last-child{
 		font: 2em "Museo 700";
 	}
-	.container {
-		/*padding: 0px;*/
+	
+}
+
+@media only screen and (max-width: 350px){
+	/*body{display: none;}*/
+	.top-section{ padding-top: 5vh; }
+blockquote{
+		font: 1.8em "CallunaRegular";
 	}
-	.intro_section {
-		border-radius: 0px;
-		height: 51vh;
-	}
+	.blockquote strong:last-child{	font: 1.8em "Museo 700";}
 }
